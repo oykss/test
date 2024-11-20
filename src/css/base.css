@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: var(--background-0);
+  color: var(--color-text-primary);
+  transition: all 250ms ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  transition: all 250ms ease-in-out;
+}
+
+p {
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  transition: all 250ms ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-text-primary);
+  transition: all 250ms ease-in-out;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all 250ms ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* title */
+.title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.title > span {
+  color: var(--color-text-secondary);
+}
+
+section {
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 108px;
+    line-height: 1.148;
+    letter-spacing: 0.02em;
+  }
+
+  section {
+    padding-bottom: 124px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    padding-bottom: 164px;
+  }
+}

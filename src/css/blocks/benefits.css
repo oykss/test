@@ -1,0 +1,119 @@
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 32px;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #00b068;
+  stroke-width: 2;
+}
+
+.benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #bcdfd1;
+}
+
+.benefits__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.benefits__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.benefits-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 0;
+  }
+
+  .benefits__item {
+    max-width: 336px;
+  }
+
+  .benefits__item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title_desktop {
+    max-width: 686px;
+    margin-bottom: -96px;
+  }
+
+  .benefits__item {
+    max-width: 384px;
+  }
+
+  .benefits__item:first-child {
+    margin-left: 832px;
+  }
+
+  .benefits_container {
+    position: relative;
+  }
+
+  .benefits-image {
+    background-image: url('/../img/benefits-img/benefits-decor-bg-@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 526px;
+    height: 408px;
+    z-index: -1;
+    top: -112px;
+    right: 32px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .benefits-image {
+      background-image: url('/../img/benefits-img/benefits-decor-bg-@2x.png');
+    }
+  }
+}

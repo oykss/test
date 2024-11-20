@@ -1,0 +1,18 @@
+/* Common styles */
+@import url('./base.css');
+@import url('./container.css');
+@import url('./root.css');
+
+/* Sections style */
+@import url('./blocks/header.css');
+@import url('./blocks/hero.css');
+@import url('./blocks/about-me.css');
+@import url('./blocks/tech-skills.css');
+@import url('./blocks/projects.css');
+@import url('./blocks/benefits.css');
+@import url('./blocks/faq.css');
+@import url('./blocks/reviews.css');
+@import url('./blocks/work-together.css');
+@import url('./blocks/footer.css');
+
+@import url('./blocks/checkbox-mod.css');
