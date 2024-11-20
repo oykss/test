@@ -96,7 +96,7 @@
   }
 
   .benefits-image {
-    background-image: url('././img/benefits-img/benefits-decor-bg-@1x.png');
+    background-image: url('./../img/benefits-img/benefits-decor-bg-@1x.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
