@@ -20,23 +20,22 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/test/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test/assets/index-cgyAE80j.css">
+    <link rel="modulepreload" crossorigin href="/test/assets/vendor-DAxLkxIB.js">
+    <link rel="stylesheet" crossorigin href="/test/assets/index-WekO_WvD.css">
   </head>
   <body>
     <header id="header">
   <div class="container">
     <a href="./index.html" class="title">Lloyd<span>Jefferson.</span></a>
-    <button type="button" aria-label="button menu">
-      <svg class="icon" width="32" height="32">
-        <use href="/test/assets/icon-D-b73L-z.svg#icon-menu"></use>
-      </svg>
+    <button class="burger js-open-menu" type="button">
+      <span class="burger-line"></span>
     </button>
     <nav>
       <div id="button-3" class="button-changes-mod r">
         <input class="checkbox units" name="checkbox-mod" type="checkbox" />
         <div class="knobs-changes-mod">
           <svg class="icon-moon" width="24" height="24">
-            <use href="/test/assets/icon-D-b73L-z.svg#icon-moon"></use>
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-moon"></use>
           </svg>
         </div>
         <div class="layer-changes-mod"></div>
@@ -47,20 +46,495 @@
     </nav>
   </div>
 </header>
-
     <main>
-      <section id="hero">
-  <!-- Hero section -->
+      <section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-top">
+      <h1 class="hero-title">
+        Hello, I am
+        <img
+          srcset="/test/assets/hero-image-BD6uDP8Z.jpg 1x, /test/assets/hero-image@2x-D9bHo3-y.jpg 2x"
+          src="/test/assets/hero-image-BD6uDP8Z.jpg"
+          alt="My photo"
+          class="hero-title-img"
+          width="108"
+          height="108"
+        />
+        <span class="hero-span">Fullstack developer</span>
+      </h1>
+      <div class="hero-info-container">
+        <div class="hero-btn-container">
+          <div class="hero-btn">
+            <a href="#work-together" class="hero-btn-text">
+              <svg class="hero-btn-icon" width="28" height="32">
+                <use href="/test/assets/icon-XL6tm0IA.svg#icon-hero-arrow"></use>
+              </svg>
+              Order the project
+            </a>
+          </div>
+        </div>
+        <p class="hero-info">
+          I work with people all over the world to create
+          <span class="hero-span">impressive</span> and
+          <span class="hero-span">functional websites</span> that reflect each
+          client&apos;s unique personality.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <ul class="hero-social-list">
+      <li>
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          class="hero-social-link"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          class="hero-social-link"
+          >Facebook</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+          target="_blank"
+          class="hero-social-link"
+          >Linkedin</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/oykss/team-landing-portfolio"
+          target="_blank"
+          class="hero-social-link"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </div>
 </section>
 
-      <section id="about-me"><!-- About Me section -->123</section>
+      <section id="about-me">
+  <!-- About Me section -->
+  <div class="container">
+    <h2 class="title about-me-title">About <span>me</span></h2>
+    <div class="about-me-container">
+      <div class="picture-bio-container">
+        <picture>
+          <source
+            srcset="/test/assets/img-1-mob-1x-DwT0L_lu.jpg 1x, /test/assets/img-1-mob-2x-pWcB62jQ.jpg 2x"
+            media="(max-width:767px)"
+          />
+          <img
+            src="/test/assets/img-1-mob-1x-DwT0L_lu.jpg"
+            alt="This is my photo"
+            class="about-me-photo"
+          />
+        </picture>
+        <div class="about-me-item bio-container">
+          <h3 class="about-sub-header">BIO</h3>
+          <p class="about-first-paragraph about-paragraph-text">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+          <p class="about-paragraph-text">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
+      </div>
+      <div class="education-role-container">
+        <div class="about-me-item education-container">
+          <h3 class="about-sub-header">EDUCATION</h3>
+          <ul class="education-list">
+            <li class="about-bullet-item about-paragraph-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li class="about-bullet-item about-paragraph-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li class="about-paragraph-text about-bullet-item">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </li>
+          </ul>
+        </div>
+        <div class="about-me-item role-container">
+          <h3 class="about-sub-header">ROLE</h3>
+          <ul class="role-list">
+            <li class="about-bullet-item about-paragraph-text">
+              Frontend development
+            </li>
+            <li class="about-bullet-item about-paragraph-text">
+              HeadlessCMS, Wordpress
+            </li>
+            <li class="about-bullet-item about-paragraph-text">
+              Blender (enjoy)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section id="tech-skills">
-  <!-- Tech Skills section -->
+      <section id="tech-skills" class="tech-skills">
+  <h2 class="visually-hidden">Tech Skills</h2>
+  <!-- Горизонтальний рядок -->
+  <div class="marquee">
+    <div class="marquee__inner">
+      <p class="marquee__line">
+        HTML/CSS <span class="separator"></span> JavaScript
+        <span class="separator"></span> React
+        <span class="separator"></span> Node.js
+        <span class="separator"></span> React Native
+        <span class="separator"></span> TypeScript
+      </p>
+      <!-- Другий рядок для плавного безперервного ефекту -->
+      <p class="marquee__line">
+        HTML/CSS <span class="separator"></span> JavaScript
+        <span class="separator"></span> React
+        <span class="separator"></span> Node.js
+        <span class="separator"></span> React Native
+        <span class="separator"></span> TypeScript
+      </p>
+    </div>
+  </div>
+
+  <!-- Нахилений рядок -->
+  <div class="marquee marquee--tilted">
+    <div class="marquee__inner">
+      <p class="marquee__line marquee__line__tilted">
+        TypeScript <span class="separator"></span> React Native
+        <span class="separator"></span> Node.js
+        <span class="separator"></span> React
+        <span class="separator"></span> JavaScript
+        <span class="separator"></span> HTML/CSS
+      </p>
+      <!-- Другий рядок для плавного безперервного ефекту -->
+      <p class="marquee__line marquee__line__tilted">
+        TypeScript <span class="separator"></span> React Native
+        <span class="separator"></span> Node.js
+        <span class="separator"></span> React
+        <span class="separator"></span> JavaScript
+        <span class="separator"></span> HTML/CSS
+      </p>
+    </div>
+  </div>
 </section>
 
       <section id="projects">
   <!-- Projects section -->
+  <h2 class="title centered">MY<span class="green">PROJECTS</span></h2>
+  <div class="container">
+    <ul class="project-list">
+      <li class="item">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj1_web_1x-B65muaQ-.jpg 1x, /test/assets/proj1_web_2x-DwVySU9h.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj1_tabet_1x.jpg 1x, /test/assets/proj1_tablet_2x-UxoRcxYE.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj1_mob_1x--oPoIL73.jpg 1x, /test/assets/proj1_mob_2x-JZj7ZATt.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj1_web_1x-B65muaQ-.jpg"
+              width="308"
+              alt="Wallet webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Wallet webservice</p>
+          <a class="item-btn-grey" href="">
+            VISIT<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj2_web_1x-BO8zkhUF.jpg 1x, /test/assets/proj2_web_1x-BO8zkhUF.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj2_tabet_1x.jpg 1x, /test/assets/proj2_tablet_2x-DokH7ybJ.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj2_mob_1x-B_h48Gd7.jpg 1x, /test/assets/proj2_mob_2x-CnbKdYc0.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj2_web_1x-BO8zkhUF.jpg"
+              width="308"
+              alt="Green harvest webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Green harvest webservice</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj3_web_1x-FULq-y74.jpg 1x, /test/assets/proj3_web_2x-D-50e8Cw.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj3_tabet_1x.jpg 1x, /test/assets/proj3_tablet_2x-ClUhz8gP.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj3_mob_1x-B2Rv-MR1.jpg 1x, /test/assets/proj3_mob_2x-DX3qKFX-.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj3_web_1x-FULq-y74.jpg"
+              width="308"
+              alt="English Exellence website"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">English Exellence website</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj1_web_1x-B65muaQ-.jpg 1x, /test/assets/proj1_web_2x-DwVySU9h.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj1_tabet_1x.jpg 1x, /test/assets/proj1_tablet_2x-UxoRcxYE.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj1_mob_1x--oPoIL73.jpg 1x, /test/assets/proj1_mob_2x-JZj7ZATt.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj1_web_1x-B65muaQ-.jpg"
+              width="308"
+              alt="Wallet webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Wallet webservice</p>
+          <a class="item-btn-grey" href="">
+            VISIT<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj2_web_1x-BO8zkhUF.jpg 1x, /test/assets/proj2_web_1x-BO8zkhUF.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj2_tabet_1x.jpg 1x, /test/assets/proj2_tablet_2x-DokH7ybJ.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj2_mob_1x-B_h48Gd7.jpg 1x, /test/assets/proj2_mob_2x-CnbKdYc0.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj2_web_1x-BO8zkhUF.jpg"
+              width="308"
+              alt="Green harvest webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Green harvest webservice</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj3_web_1x-FULq-y74.jpg 1x, /test/assets/proj3_web_2x-D-50e8Cw.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj3_tabet_1x.jpg 1x, /test/assets/proj3_tablet_2x-ClUhz8gP.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj3_mob_1x-B2Rv-MR1.jpg 1x, /test/assets/proj3_mob_2x-DX3qKFX-.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj3_web_1x-FULq-y74.jpg"
+              width="308"
+              alt="English Exellence website"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">English Exellence website</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj1_web_1x-B65muaQ-.jpg 1x, /test/assets/proj1_web_2x-DwVySU9h.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj1_tabet_1x.jpg 1x, /test/assets/proj1_tablet_2x-UxoRcxYE.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj1_mob_1x--oPoIL73.jpg 1x, /test/assets/proj1_mob_2x-JZj7ZATt.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj1_web_1x-B65muaQ-.jpg"
+              width="308"
+              alt="Wallet webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Wallet webservice</p>
+          <a class="item-btn-grey" href="">
+            VISIT<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj2_web_1x-BO8zkhUF.jpg 1x, /test/assets/proj2_web_1x-BO8zkhUF.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj2_tabet_1x.jpg 1x, /test/assets/proj2_tablet_2x-DokH7ybJ.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj2_mob_1x-B_h48Gd7.jpg 1x, /test/assets/proj2_mob_2x-CnbKdYc0.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj2_web_1x-BO8zkhUF.jpg"
+              width="308"
+              alt="Green harvest webservice"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">Green harvest webservice</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="item visually-hidden">
+        <div class="item-img">
+          <picture>
+            <source
+              srcset="/test/assets/proj3_web_1x-FULq-y74.jpg 1x, /test/assets/proj3_web_2x-D-50e8Cw.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./img/projects/proj3_tabet_1x.jpg 1x, /test/assets/proj3_tablet_2x-ClUhz8gP.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/test/assets/proj3_mob_1x-B2Rv-MR1.jpg 1x, /test/assets/proj3_mob_2x-DX3qKFX-.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="/test/assets/proj3_web_1x-FULq-y74.jpg"
+              width="308"
+              alt="English Exellence website"
+            />
+          </picture>
+        </div>
+        <p class="item-subtext">React, JavaScript, Node JS, Git</p>
+        <div class="container-txt-btn">
+          <p class="item-text">English Exellence website</p>
+          <a class="item-btn-grey" href="">
+            Visit<svg class="btn-grey-icon" height="24" width="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-projects-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <button class="load-more" type="button"><a>Load more</a></button>
+  </div>
 </section>
 
       <section id="benefits">
@@ -73,7 +547,7 @@
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
-            <use href="/test/assets/icon-D-b73L-z.svg#icon-user-01"></use>
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-user-01"></use>
           </svg>
         </div>
         <h3 class="benefits__subtitle">Expertise</h3>
@@ -85,7 +559,7 @@
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
-            <use href="/test/assets/icon-D-b73L-z.svg#icon-message-chat-circle"></use>
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-message-chat-circle"></use>
           </svg>
         </div>
         <h3 class="benefits__subtitle">Communication</h3>
@@ -97,7 +571,7 @@
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
-            <use href="/test/assets/icon-D-b73L-z.svg#icon-brush-01"></use>
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-brush-01"></use>
           </svg>
         </div>
         <h3 class="benefits__subtitle">Art</h3>
@@ -109,7 +583,7 @@
       <li class="benefits__item">
         <div class="benefits__icon">
           <svg class="icon" width="24" height="24">
-            <use href="/test/assets/icon-D-b73L-z.svg#icon-hourglass-02"></use>
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-hourglass-02"></use>
           </svg>
         </div>
         <h3 class="benefits__subtitle">Urgent Execution</h3>
@@ -127,23 +601,224 @@
 </section>
 
       <section id="reviews">
-  <!-- Reviews section -->
+  <div class="container">
+    <h1 class="title">reviews</h1>
+    <p class="error-text">Oops...Something went wrong</p>
+    <div class="swiper">
+      <ul class="review-list swiper-wrapper"></ul>
+    </div>
+    <div class="nav-buttons">
+      <div class="swiper-button swiper-button-prev">
+        <svg class="slider-icon" width="24" height="24">
+          <use href="/test/assets/icon-XL6tm0IA.svg#icon-arrow-narrow-right" />
+        </svg>
+      </div>
+      <div class="swiper-button swiper-button-next">
+        <svg class="slider-icon" width="24" height="24">
+          <use href="/test/assets/icon-XL6tm0IA.svg#icon-arrow-narrow-left" />
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>
 
       <section id="work-together">
-  <!-- Work Together section -->
+  <div class="container">
+    <div class="cont-wrap">
+      <h2 class="title">let’s <span>work together</span></h2>
+      <p class="desc">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
+
+      <ul class="cont-list">
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-tel"></use>
+          </svg>
+          <a class="link" href="tel:+380904567890" aria-label="Phone">
+            +38 090 456 78 90
+          </a>
+        </li>
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-email"></use>
+          </svg>
+          <a
+            class="link"
+            href="mailto:lloydjefferson@gmail.com"
+            aria-label="Email"
+          >
+            lloydjefferson@gmail.com
+          </a>
+        </li>
+        <li class="item">
+          <svg class="icon" width="24" height="24">
+            <use href="/test/assets/icon-XL6tm0IA.svg#icon-loc"></use>
+          </svg>
+          <a
+            class="link"
+            href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+            aria-label="Address"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            USA, New York
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form id="cont-form" class="cont-form form-work-together">
+      <label for="user-email" class="email-label label-form-work-together">
+        <input
+          type="email"
+          name="user-email"
+          class="input-form-work-together"
+          id="user-email"
+          placeholder="Your email*"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          aria-label="Enter your email"
+          required
+        />
+        <span class="error-message">Invalid email, try again</span>
+        <svg
+          class="icon-checkmark icon-checkmark-work-together"
+          width="16"
+          height="16"
+        >
+          <use href="/test/assets/icon-XL6tm0IA.svg#icon-checkmark"></use>
+        </svg>
+      </label>
+
+      <textarea
+        name="user-message"
+        class="textarea-form-work-together"
+        id="user-message"
+        cols="30"
+        rows="5"
+        placeholder="Message"
+        aria-label="Text me a message"
+      ></textarea>
+
+      <button
+        type="submit"
+        id="form-submit"
+        class="button-form-work-together openModal"
+        aria-label="Submit"
+      >
+        SEND MESSAGE
+      </button>
+    </form>
+  </div>
 </section>
 
     </main>
     <footer id="footer">
-  <!-- Footer section -->
+  <div class="container">
+    <a href="./index.html" class="title">Lloyd<span>Jefferson.</span></a>
+
+    <div class="footer-right-container">
+      <ul class="footer-list">
+        <li>
+          <a
+            class="footer-link-soc"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-link-soc"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-link-soc"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-link-soc"
+            href="https://github.com/oykss/team-landing-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+      </ul>
+      <div class="footer-made-by-conteniar">
+        <p class="footer-made-by">© Copyright 2024. Made by LloydJefferson</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 
       
-    <div></div>
+    <div class="overlay-form"></div>
+<div class="modal-form" id="modal">
+  <h3 class="title-modal-form-work-together">
+    Thank you for your interest in cooperation!
+  </h3>
+  <p class="text-modal-form-work-together">
+    The manager will contact you shortly to discuss further details and
+    opportunities for cooperation. Please stay in touch.
+  </p>
+  <button type="button" class="close-btn-work-together closeModal">
+    <svg class="icon-modal-work-together" height="24" width="24">
+      <use href="/test/assets/icon-XL6tm0IA.svg#icon-close"></use>
+    </svg>
+  </button>
+</div>
 
-    
+    <div class="mob-menu">
+  <div class="mob-header">
+    <a href="./index.html" class="mob-logo">Lloyd<span class="mob-logo-span">Jefferson.</span></a>
+    <!-- <button class="mob-close-button" type="button" aria-label="button close" data-close="true">
+      <svg class="mob-close-icon" width="32" height="32">
+        <use href="/img/icon.svg#icon-close"></use>
+      </svg>
+    </button> -->
+  </div>
+  <div class="mob-menu-container">
+    <ul class="mob-nav-list">
+      <li class="mob-nav-link">
+        <a href="#about-me" class="link" data-close="true">About me</a>
+      </li>
+      <li class="mob-nav-link">
+        <a href="#projects" class="link" data-close="true">Projects</a>
+      </li>
+      <li class="mob-nav-link">
+        <a href="#work-together" class="link" data-close="true">Contacts</a>
+      </li>
+      <li class="mob-nav-link">
+        <div id="button-3" class="button-changes-mod r">
+          <input class="checkbox units" name="checkbox-mod" type="checkbox" />
+          <div class="knobs-changes-mod">
+            <svg class="icon-moon" width="24" height="24">
+              <use href="/test/assets/icon-XL6tm0IA.svg#icon-moon"></use>
+            </svg>
+          </div>
+          <div class="layer-changes-mod"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
   </body>
 </html>
