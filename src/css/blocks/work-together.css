@@ -1,0 +1,227 @@
+#work-together .title {
+  margin-bottom: 40px;
+}
+
+#work-together .cont-list .icon {
+  fill: none;
+  stroke: #00b068;
+}
+
+#cont-form .email-label {
+  position: relative;
+}
+
+#cont-form .icon-checkmark {
+  position: absolute;
+  top: 4px;
+  left: 288px;
+  opacity: 0;
+  fill: var(--color-text-secondary);
+  transition: all 250ms ease-in-out;
+}
+
+#work-together .desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+}
+
+#work-together .cont-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#work-together .item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--color-text-primary);
+}
+
+#work-together .link:is(:hover, :focus) {
+  color: var(--color-text-secondary);
+}
+
+#user-message,
+#user-email {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  background-color: var(--background-1);
+  color: var(--color-text-primary);
+  border: none;
+  outline: none;
+}
+
+#user-email {
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+#user-email:autofill {
+  box-shadow: 0 0 0px 1000px var(--background-1) inset !important;
+}
+
+#user-message {
+  height: 128px;
+  margin-bottom: 32px;
+  resize: none;
+}
+
+#user-email::placeholder,
+#user-message::placeholder {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--color-text-primary);
+}
+
+#work-together .cont-wrap {
+  margin-bottom: 32px;
+}
+
+#form-submit {
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 100%;
+  background: var(--color-text-secondary);
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+#form-submit:is(:hover, :focus) {
+  background-color: var(--background-5);
+}
+
+.error-message {
+  position: absolute;
+  top: 38px;
+  opacity: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--error);
+  transition: all 250ms ease-in-out;
+  width: 150px;
+}
+
+#user-email:invalid:not(:placeholder-shown) + .error-message {
+  opacity: 1;
+}
+
+#user-email:invalid:not(:placeholder-shown) {
+  color: var(--error);
+}
+
+#user-email:valid + .error-message {
+  opacity: 0;
+}
+
+.email-label #user-email:valid ~ .icon-checkmark {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #work-together .title {
+    margin-bottom: 60px;
+  }
+
+  #work-together .desc {
+    width: 488px;
+  }
+
+  #work-together .cont-list {
+    flex-direction: row;
+  }
+
+  #work-together .cont-wrap {
+    margin-bottom: 60px;
+  }
+
+  #form-submit {
+    width: 173px;
+  }
+
+  #cont-form .icon-checkmark {
+    top: 4px;
+    left: 672px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #work-together .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #work-together .container::before {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: -110px;
+    width: 526px;
+    height: 408px;
+    display: inline-block;
+    background-image: url('../../img/work-together/work-together-decor@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    #work-together .container::before {
+      background-image: url('../../img/work-together/work-together-decor@2x.png');
+    }
+  }
+
+  #work-together .title {
+    margin-bottom: 80px;
+  }
+
+  #work-together .desc {
+    width: 488px;
+    margin-bottom: 120px;
+  }
+
+  #work-together .cont-list {
+    flex-direction: column;
+  }
+
+  #work-together .cont-wrap {
+    margin-bottom: 0px;
+    width: 520px;
+  }
+
+  #form-submit {
+    width: 173px;
+  }
+
+  #cont-form {
+    width: 592px;
+    margin-top: 328px;
+  }
+
+  #cont-form .icon-checkmark {
+    top: 4px;
+    left: 560px;
+  }
+}

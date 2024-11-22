@@ -12,21 +12,63 @@
   letter-spacing: 0.06em;
 }
 
-#header button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.burger {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  z-index: 999;
+  align-items: center;
+  justify-content: flex-end;
+  width: 28px;
+  height: 18px;
+  padding: 0;
 }
 
-#header .icon {
-  fill: var(--color-text-primary);
-  transition: all 250ms ease-in-out;
+.burger-line {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: var(--color-text-primary);
+  transition: all 0.3s ease 0s;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-text-primary);
+  transition: all 0.3s ease 0s;
 }
 
-#header button:is(:hover, :focus) .icon {
-  fill: var(--color-text-secondary);
+.burger:is(:hover, :focus) .burger-line,
+.burger:is(:hover, :focus)::before,
+.burger:is(:hover, :focus)::after {
+  background-color: var(--color-text-secondary);
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.is-active .burger-line {
+  transform: scale(0);
+}
+
+.burger.is-active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.is-active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
 }
 
 #header nav {

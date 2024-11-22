@@ -1,0 +1,119 @@
+#reviews .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  min-width: 280px;
+}
+
+.review-list {
+  display: flex;
+}
+
+.swiper-slide {
+  min-width: 280px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 16px;
+  padding: 32px;
+  height: 296px;
+  margin-bottom: 24px;
+  background-color: var(--background-1);
+}
+
+.review-card::-webkit-scrollbar {
+  display: none;
+}
+
+.review-text {
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.author-info {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.review-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-right: 20px;
+}
+
+.swiper-button {
+  position: relative;
+  border: 1px solid var(--color-text-primary);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  fill: transparent;
+  stroke: var(--color-text-primary);
+}
+
+.swiper-button.disabled {
+  opacity: 0.2;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: default;
+}
+
+.swiper-button.disabled .slider-icon {
+  opacity: 0.6;
+}
+
+#reviews .error-text {
+  font-family: inherit;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .review-card {
+    height: 224px;
+  }
+  .swiper-slide {
+    min-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-slide {
+    min-width: 592px;
+  }
+}

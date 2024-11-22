@@ -1,0 +1,132 @@
+.centered {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.item {
+  min-width: 320px;
+  max-width: 360px;
+  margin: 0 auto 40px;
+}
+.item-img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.item-img img {
+  width: 100%;
+}
+.item-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+}
+.item-text {
+  margin: 16px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+.item-btn-grey {
+  background-color: #e4e5e6;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  cursor: pointer;
+max-width: 125px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item-btn-grey:hover {
+  background-color: #bbbbbb;
+}
+.btn-grey-icon {
+  fill: #00b068;
+}
+.load-more {
+  background-color: transparent;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.load-more a {
+  position: relative;
+  display: inline-block;
+  color: #292929;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.load-more a:hover,
+.load-more a:focus {
+  color: #00b068;
+}
+.load-more a::after {
+  content: '';
+  position: absolute;
+  background: #00b068;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+@media (min-width: 768px) {
+  .centered {
+    margin-bottom: 60px;
+  }
+  .item {
+    min-width: none;
+    max-width: none;
+    width: 704px;
+    margin: 0 auto 60px;
+  }
+  .item-img {
+    border-radius: 24px;
+  }
+  .container-txt-btn {
+    display: flex;
+    align-items: flex-end;
+  }
+  .item-subtext {
+    margin-top: 16px;
+  }
+  .item-text {
+    margin: 20px 0 0 0;
+    font-size: 36px;
+  }
+  .load-more {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .centered {
+    margin-bottom: 80px;
+  }
+  .item {
+    width: 1008px;
+    margin: 0 auto 80px;
+  }
+}

@@ -1,0 +1,147 @@
+.tech-skills {
+  min-height: 324px;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--background-4);
+  padding: 32px 0px;
+  width: 100%;
+  height: 104px;
+  z-index: 2;
+}
+
+.marquee__inner {
+  display: flex;
+  animation: marquee-animation 15s linear infinite;
+}
+
+.marquee__line {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee__line::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--color-text-secondary);
+  margin-right: 16px;
+}
+
+.marquee__line__tilted {
+  display: flex;
+  gap: 16px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee__line__tilted::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--color-text-primary);
+  margin-right: 16px;
+}
+
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.separator {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: #00b068;
+  vertical-align: middle;
+}
+
+.marquee--tilted .separator {
+  background-color: var(--color-text-primary);
+}
+
+.marquee--tilted {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transform: rotate(2deg);
+  background-color: var(--background-1);
+  padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .tech-skills {
+    min-height: 404px;
+  }
+
+  .marquee {
+    padding: 40px 0px;
+    width: 100%;
+    height: 128px;
+  }
+
+  .marquee--tilted {
+    top: 132px;
+  }
+
+  .marquee__line {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    gap: 20px;
+  }
+
+  .marquee__line::after {
+    margin-right: 20px;
+  }
+
+  .marquee__line__tilted {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    gap: 20px;
+  }
+
+  .marquee__line__tilted::after {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tech-skills {
+    min-height: 444px;
+  }
+
+  .marquee--tilted {
+    top: 128px;
+  }
+}
