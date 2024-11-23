@@ -7,6 +7,7 @@ import imagemin from 'vite-plugin-imagemin';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/team-landing-portfolio/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
