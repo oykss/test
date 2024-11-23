@@ -3,14 +3,24 @@
     <div class="hero-top">
       <h1 class="hero-title">
         Hello, I am
-        <img
-          srcset="./img/hero/hero-image.jpg 1x, ./img/hero/hero-image@2x.jpg 2x"
-          src="./img/hero/hero-image.jpg"
-          alt="My photo"
-          class="hero-title-img"
-          width="108"
-          height="108"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/hero/hero-image.jpg    1x,
+              ./img/hero/hero-image@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            src="./img/hero/hero-image.jpg"
+            alt="My photo"
+            class="hero-title-img"
+            width="108"
+            height="108"
+            loading="lazy"
+          />
+        </picture>
+
         <span class="hero-span">Fullstack developer</span>
       </h1>
       <div class="hero-info-container">
@@ -18,7 +28,7 @@
           <div class="hero-btn">
             <a href="#work-together" class="hero-btn-text">
               <svg class="hero-btn-icon" width="28" height="32">
-                <use href="/img/icon.svg#icon-hero-arrow"></use>
+                <use href="/public/icon.svg#icon-hero-arrow"></use>
               </svg>
               Order the project
             </a>

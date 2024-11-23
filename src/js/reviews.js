@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import axios from 'axios';
 import { Navigation } from 'swiper/modules';
-import { createObserver } from './observer';
 
 const reviewList = document.querySelector('.swiper-wrapper');
 const errorText = document.querySelector('.error-text');
@@ -42,7 +41,7 @@ const createMarkup = reviews => {
     .join('');
 };
 
-const renderReviews = async () => {
+export const renderReviews = async () => {
   const reviews = await fetchReviews();
   if (!reviews) {
     errorText.style.display = 'block';
@@ -103,6 +102,3 @@ const renderReviews = async () => {
     },
   });
 };
-
-const observer = createObserver(renderReviews);
-observer.observe(reviewList);

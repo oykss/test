@@ -1,19 +1,19 @@
+import data from '/public/data.json';
+import { generationContentList } from './render-projects';
+
 let count = 3;
 const btnLoadMore = document.querySelector('.load-more');
 btnLoadMore.addEventListener('click', addProjects);
 
 function addProjects() {
-  const listHidden = document.querySelectorAll(
-    '.project-list .visually-hidden'
-  );
+  let temp = count + 2;
 
-  if (listHidden.length <= 3) {
-    count = listHidden.length;
+  if (temp >= data.projects.length - 1) {
     btnLoadMore.classList.add('visually-hidden');
     btnLoadMore.removeEventListener('click', addProjects);
-  }
-
-  for (let i = 0; i < count; i++) {
-    listHidden[i].classList.remove('visually-hidden');
+    generationContentList(count, data.projects.length - 1);
+  } else {
+    generationContentList(count, temp);
+    count = temp + 1;
   }
 }

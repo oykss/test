@@ -1,12 +1,10 @@
 import data from '/public/data.json';
-console.log(data);
-// Не забуть поменять
+
 const basePath = import.meta.env.BASE_URL || '';
 const projectSection = document.querySelector('.project-list');
 
-function generationContentList(first, second) {
+export function generationContentList(first, second) {
   for (let i = first; i <= second; i++) {
-    console.log(data.projects[i]);
     const {
       image: { '1x': image1x, '2x': image2x },
       name,
@@ -42,6 +40,3 @@ function generationContentList(first, second) {
       </li>`;
   }
 }
-
-generationContentList(0, 9);
-// console.log(data.projects[1]);

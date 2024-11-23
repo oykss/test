@@ -1,0 +1,181 @@
+/* Секція Work Together */
+section#work-together .icon {
+  transition: transform 0.3s ease;
+}
+
+section#work-together .item:hover .icon {
+  transform: scale(1.5);
+}
+
+/* Секція Footer */
+
+footer#footer .footer-link-soc {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+footer#footer .footer-link-soc:hover {
+  transform: scale(1.3);
+}
+
+footer#footer .title {
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+footer#footer .title:hover {
+  animation: shake 1s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Секція Hero */
+section#hero .hero-social-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+section#hero .hero-social-link:hover {
+  transform: scale(1.3);
+}
+
+/* Секція Header */
+header#header .link {
+  transition: transform 0.3s ease;
+}
+
+header#header .link:hover {
+  transform: scale(1.3);
+}
+
+header#header .title {
+  display: inline-block;
+  transition: all 1s ease;
+}
+
+header#header .title:hover {
+  animation: shake 1s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Секція Projects */
+section#projects .item-btn-grey {
+  transition: all 0.5s ease;
+}
+
+section#projects .item-btn-grey:hover {
+  animation: horizontal-shake 0.5s ease;
+}
+
+@keyframes horizontal-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+section#projects .load-more {
+  transition: all 1s ease;
+}
+
+section#projects .load-more:hover {
+  animation: rotate-shake 1s ease;
+}
+
+@keyframes rotate-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
