@@ -4,7 +4,6 @@ export const createObserver = renderFunction => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           renderFunction();
-          lo;
           observer.unobserve(entry.target);
         }
       });

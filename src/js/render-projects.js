@@ -40,3 +40,5 @@ export function generationContentList(first, second) {
       </li>`;
   }
 }
+
+generationContentList(0, 2);
