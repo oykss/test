@@ -1,6 +1,7 @@
 import './js/render-projects';
 import './js/projects';
 import './js/faq';
+import './js/observer';
 import './js/reviews';
 import './js/work-together';
 
