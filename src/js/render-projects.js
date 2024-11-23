@@ -1,5 +1,6 @@
 import data from '/public/data.json';
 console.log(data);
+// Не забуть поменять
 const basePath = import.meta.env.BASE_URL || '';
 const projectSection = document.querySelector('.project-list');
 
