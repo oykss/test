@@ -35,7 +35,7 @@ function generationContentList(first, second) {
           <a class="item-btn-grey" href="https://github.com/oykss/team-landing-portfolio" target="_blank" rel="noopener noreferrer">
             VISIT
             <svg class="btn-grey-icon" width="24" height="24">
-              <use href="${basePath}/img/icon.svg#icon-arrow-up-right"></use>
+              <use href="${basePath}/icon.svg#icon-arrow-up-right"></use>
             </svg>
           </a>
         </div>
