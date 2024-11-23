@@ -5,7 +5,7 @@ import{A as P,S as $,N as A,a as j}from"./assets/vendor-ClQ9ArOj.js";(function()
             <source
               srcset="
                 ${l+n} 1x,
-                 ${l+s}2x
+                 ${l+s} 2x
               "
             />
             <img
