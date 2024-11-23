@@ -44,12 +44,11 @@
       </ul>
     </div>
 
-    <form id="cont-form" class="cont-form form-work-together">
-      <label for="user-email" class="email-label label-form-work-together">
+    <form id="cont-form">
+      <label for="user-email" class="email-label">
         <input
           type="email"
           name="user-email"
-          class="input-form-work-together"
           id="user-email"
           placeholder="Your email*"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
@@ -57,18 +56,13 @@
           required
         />
         <span class="error-message">Invalid email, try again</span>
-        <svg
-          class="icon-checkmark icon-checkmark-work-together"
-          width="16"
-          height="16"
-        >
+        <svg class="icon-checkmark" width="16" height="16">
           <use href="/img/icon.svg#icon-checkmark"></use>
         </svg>
       </label>
 
       <textarea
         name="user-message"
-        class="textarea-form-work-together"
         id="user-message"
         cols="30"
         rows="5"
@@ -76,12 +70,7 @@
         aria-label="Text me a message"
       ></textarea>
 
-      <button
-        type="submit"
-        id="form-submit"
-        class="button-form-work-together openModal"
-        aria-label="Submit"
-      >
+      <button type="submit" id="form-submit" aria-label="Submit">
         SEND MESSAGE
       </button>
     </form>

@@ -1,9 +1,12 @@
 import axios from 'axios';
+import { modalWindowOpen } from './modal-window';
 
 const form = document.querySelector('#cont-form');
 
 form.addEventListener('submit', async event => {
   event.preventDefault();
+  const titleWindow = document.querySelector('#modal .title-modal');
+  const messageWindow = document.querySelector('#modal .desc');
 
   const data = {
     email: form.elements['user-email'].value.trim(),
@@ -17,28 +20,13 @@ form.addEventListener('submit', async event => {
     );
 
     form.reset();
+    modalWindowOpen();
+    document.body.style.overflow = 'hidden';
 
     const { title, message } = response.data;
-    //   виклик функції відкритя модального вікна
+    titleWindow.innerHTML = title;
+    messageWindow.innerHTML = message;
   } catch (error) {
     alert('Failed to submit the form. Try again.');
   }
 });
-
-// MODAL OPEN
-const formModal = document.querySelector(".form-work-together");
-const modal = document.querySelector(".modal-form");
-const overlay = document.querySelector(".overlay-form");
-const buttonOpen = document.querySelector(".openModal");
-
-function openModal(event) {
-
-    if (formModal.checkValidity()) {
-        modal.classList.add("is-open");
-        overlay.classList.add("is-open");
-
-    event.preventDefault();
-    }
-}
-
-buttonOpen.addEventListener("click", openModal);

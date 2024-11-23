@@ -1,15 +1,17 @@
-const btnLoadMore = document.querySelector('#projects .load-more');
 let count = 3;
-
-btnLoadMore.addEventListener('click', () => {
-  const listHidden = document.querySelectorAll('#projects .visually-hidden');
-  if (listHidden.length <= 3) {
-    count = listHidden.length;
-    btnLoadMore.classList.add('visually-hidden');
-  }
-  for (let i = 0; i < count; i++) {
-    setTimeout(() => {
-      listHidden[i].classList.remove('visually-hidden');
-    }, i * 200);
+const btnLoadMore = document.querySelector('.load-more');
+btnLoadMore.addEventListener('click', e => {
+  const listHidden = document.querySelectorAll(
+    '.project-list .visually-hidden'
+  );
+  for (const elem of listHidden) {
+    count++;
+    if (count > 7) {
+      btnLoadMore.classList.add('visually-hidden');
+    }
+    elem.classList.remove('visually-hidden');
+    if (count == 6) {
+      return;
+    }
   }
 });
