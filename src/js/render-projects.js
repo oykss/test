@@ -1,4 +1,4 @@
-import data from '../public/data.json';
+import data from '/public/data.json';
 console.log(data);
 const basePath = import.meta.env.BASE_URL || '';
 const projectSection = document.querySelector('.project-list');
@@ -18,7 +18,7 @@ function generationContentList(first, second) {
             <source
               srcset="
                 ${basePath + image1x} 1x,
-                 ${basePath + image2x}2x
+                 ${basePath + image2x} 2x
               "
             />
             <img
