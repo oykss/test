@@ -1,0 +1,74 @@
+{
+  "projects": [
+    {
+      "image": {
+        "1x": "./img/projects/1_wallet-webservice-@1x.jpg",
+        "2x": "./img/projects/1_wallet-webservice-@2x.jpg"
+      },
+      "alt": "wallet webservice"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/2_green-harvest-online-store-@1x.jpg",
+        "2x": "./img/projects/2_green-harvest-online-store-@2x.jpg"
+      },
+      "alt": "green harvest online store"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/3_english-excellence-webservice-@1x.jpg",
+        "2x": "./img/projects/3_english-excellence-webservice-@2x.jpg"
+      },
+      "alt": "English excellence webservice"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/4_vyshyvanka-vibes-landing-page-@1x.jpg",
+        "2x": "./img/projects/4_vyshyvanka-vibes-landing-page-@2x.jpg"
+      },
+      "alt": "vyshyvanka vibes Landing Page"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/5_chego-jewelry-website-@1x.jpg",
+        "2x": "./img/projects/5_chego-jewelry-website-@2x.jpg"
+      },
+      "alt": "chego jewelry website"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/6_energy-flow-webservice-@1x.jpg",
+        "2x": "./img/projects/6_energy-flow-webservice-@2x.jpg"
+      },
+      "alt": "energy flow webservice"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/7_fruitbox-online-store-@1x.jpg",
+        "2x": "./img/projects/7_fruitbox-online-store-@2x.jpg"
+      },
+      "alt": "fruitbox online store"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/8_mimino-website-@1x.jpg",
+        "2x": "./img/projects/8_mimino-website-@2x.jpg"
+      },
+      "alt": "mimino website"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/9_power-pulse-webservice-@1x.jpg",
+        "2x": "./img/projects/9_power-pulse-webservice-@2x.jpg"
+      },
+      "alt": "power pulse webservice"
+    },
+    {
+      "image": {
+        "1x": "./img/projects/10_starlight-studio-landing-page-@1x.jpg",
+        "2x": "./img/projects/10_starlight-studio-landing-page-@2x.jpg"
+      },
+      "alt": "starlight studio landing page"
+    }
+  ]
+}
