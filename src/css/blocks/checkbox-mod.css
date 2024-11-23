@@ -46,7 +46,7 @@
   border-radius: 100px;
 }
 
-#button-3 .knobs-changes-mod:before {
+.button-3 .knobs-changes-mod:before {
   content: '';
   display: flex;
   align-items: center;
@@ -62,17 +62,17 @@
   transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
 }
 
-#button-3 .checkbox:active + .knobs-changes-mod:before {
+.button-3 .checkbox:active + .knobs-changes-mod:before {
   width: 60px;
   border-radius: 100px;
 }
 
-#button-3 .checkbox:checked:active + .knobs-changes-mod:before {
+.button-3 .checkbox:checked:active + .knobs-changes-mod:before {
   margin-left: -26px;
 }
 
-#button-3 .checkbox:checked + .knobs-changes-mod:before,
-#button-3 .checkbox:checked + .knobs-changes-mod > .icon-moon {
+.button-3 .checkbox:checked + .knobs-changes-mod:before,
+.button-3 .checkbox:checked + .knobs-changes-mod > .icon-moon {
   display: block;
   content: '';
   left: 34px;

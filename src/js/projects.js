@@ -17,8 +17,3 @@ function addProjects() {
     listHidden[i].classList.remove('visually-hidden');
   }
 }
-
-import { projects } from '../public/data.json';
-document.querySelector(
-  '#test'
-).innerHTML = `<img src="${projects[0].image['1x']}" alt="">`;
