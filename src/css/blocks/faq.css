@@ -32,9 +32,10 @@
   border-radius: 16px;
 }
 #faq .icon-drop-down {
+  fill: var(--color-text-primary);
   transform: rotate(180deg);
-  width: 44px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
   transform-origin: center;
   transition: transform 250ms ease-in-out;
 }

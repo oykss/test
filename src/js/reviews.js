@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import axios from 'axios';
 import { Navigation } from 'swiper/modules';
+import { createObserver } from './observer';
 
 const reviewList = document.querySelector('.swiper-wrapper');
 const errorText = document.querySelector('.error-text');
@@ -103,19 +104,5 @@ const renderReviews = async () => {
   });
 };
 
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        renderReviews();
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    rootMargin: '0px 0px -200px 0px',
-    threshold: 0,
-  }
-);
-
+const observer = createObserver(renderReviews);
 observer.observe(reviewList);

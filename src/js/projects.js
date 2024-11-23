@@ -1,17 +1,24 @@
 let count = 3;
 const btnLoadMore = document.querySelector('.load-more');
-btnLoadMore.addEventListener('click', e => {
+btnLoadMore.addEventListener('click', addProjects);
+
+function addProjects() {
   const listHidden = document.querySelectorAll(
     '.project-list .visually-hidden'
   );
-  for (const elem of listHidden) {
-    count++;
-    if (count > 7) {
-      btnLoadMore.classList.add('visually-hidden');
-    }
-    elem.classList.remove('visually-hidden');
-    if (count == 6) {
-      return;
-    }
+
+  if (listHidden.length <= 3) {
+    count = listHidden.length;
+    btnLoadMore.classList.add('visually-hidden');
+    btnLoadMore.removeEventListener('click', addProjects);
   }
-});
+
+  for (let i = 0; i < count; i++) {
+    listHidden[i].classList.remove('visually-hidden');
+  }
+}
+
+import { projects } from '../public/data.json';
+document.querySelector(
+  '#test'
+).innerHTML = `<img src="${projects[0].image['1x']}" alt="">`;
